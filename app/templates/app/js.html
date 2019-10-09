@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    function check _fname(){
+        var f=document.from.fname.value;
+        var reg =/^[A-Za-z]+$/;
+        if (f.trim()){
+            document.getElementById("tops")
+            innerHTML ="please Enter your firstname";
+
+        }else if(!reg.test(f)){
+            document.getElementById("tops")
+            innerHTML ="please Enter only Alphabet";
+
+        }else{
+            document.getElementById("tops")
+            innerHTML ="";
+
+        }
+    }
+
+    function check_lname(){
+        var f=document.from.fname.value;
+        var reg =/^[A-Za-z]+$/;
+        if (f.trim()){
+            document.getElementById("hytech")
+            innerHTML ="please Enter your firstname";
+
+        }else if(!reg.test(f)){
+            document.getElementById("hytech")
+            innerHTML ="please Enter only Alphabet";
+
+        }else{
+            document.getElementById("hytech")
+            innerHTML ="";
+
+        }
+    } function check_mobile(){
+        var f=document.from.fname.value;
+        var reg =/^[A-Za-z]+$/;
+        if (f.trim()){
+            document.getElementById("jio")
+            innerHTML ="please Enter your firstname";
+
+        }else if(!reg.test(f)){
+            document.getElementById("jio")
+            innerHTML ="please Enter only Alphabet";
+
+        }else{
+            document.getElementById("jio")
+            innerHTML ="";
+
+        }
+    }
+</script>
+
+</head>
+<body>
+        <from action = "" method "post" name="shreya">
+                <table>
+                    <tr>
+                        <td> first name:</td>
+                        <td><input type="text" name=fname></td>
+                        <span id ="tops"></span>
+        
+        
+                    </tr>
+                    <tr>
+                        <td>last name:</td>
+                        <td><input type="text" name=lname></td>
+                        <span id="hytech"></span>
+                    </tr>
+                    <tr>
+                        <td>mobile:</td>
+                        <td><input type="text" name=mobile></td>
+                        <span id="jio"></span>
+                    </tr>
+                </table>
+            </from>
+    
+</body>
+</html>

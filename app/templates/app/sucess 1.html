@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style ="background-colour:blue" align="centre"><h1>All available doctors</h1></div>
+    <table border="1"width="100%"cellpaddding=5 cellpadding=5>
+        <tr>
+            <th>id</th>
+            <th>frist name</th>
+            <th>last name</th>
+            <th>mobile</th>
+            <th>speciality></th>
+            <th>city</th>
+            <th>gender</th>
+        </tr>
+        {% if doctordata %}
+        {% for u in doctordata %}
+        <tr>
+            <td>{{u.id}}</td>
+            <td>{{u.first name}}</td>
+            <td>{{u.lastname}}</td>
+            <td>{{u.mobile}}</td>
+            <td>{{u.speciality}}</td>
+            <td>{{u.city}}</td>
+            <td>{{u.gender}}</td>
+            <td><img style="width:10px, hight=10px;"src="{{ MEDIA__URL}}{{ u.profile__pic.url}}"</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+    </table>
+</body>
+</html>
